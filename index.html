@@ -193,15 +193,13 @@
 </section>
 
    <script>
-function validateForm() {
-    // Check if reCAPTCHA is completed
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     const response = grecaptcha.getResponse();
     if (response.length === 0) {
         alert("Please complete the CAPTCHA");
-        return false; // Prevent form submission
+        event.preventDefault(); // Prevent form submission
     }
-    return true; // Allow form submission if CAPTCHA is completed
-}
+});
 </script>
     <!-- Footer -->
     <footer>
