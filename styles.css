@@ -353,7 +353,7 @@ footer {
     display: flex;
     justify-content: center;
 
-    background: url(../project.jpg) no-repeat;
+    background: url(project.jpg) no-repeat;
     background-position: top;
   }
 
