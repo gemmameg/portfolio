@@ -171,25 +171,27 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="background"></div>
-        <div class="contact-form">
-            <h1>Contact Me</h1>
-            <form action="send_email.php" method="GET">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="Enter your message"></textarea>
-                </div>
-                <div class="form-group">
-                    <button class="btn" type="submit">Send Message</button>
-                </div>
-            </form>
-        </div>
-    </section>
+    <div class="contact-form">
+        <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/mvgozdbd" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn" type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
