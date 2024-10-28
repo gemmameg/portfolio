@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Retrieve form data
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $message = htmlspecialchars($_POST['message']);
+    $email = filter_var($_GET['email'], FILTER_SANITIZE_EMAIL);
+    $message = htmlspecialchars($_GET['message']);
 
     // Email details
     $to = "megijakalnina4@gmail.com"; 
