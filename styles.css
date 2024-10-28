@@ -242,7 +242,7 @@ nav {
 }
 
 .background {
-  background: url("../banner.jpg") no-repeat;
+  background: url("banner.jpg") no-repeat;
   background-size: cover;
   background-position: top;
   filter: brightness(0.5);
