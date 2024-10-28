@@ -1,14 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
-    $name = htmlspecialchars($_POST['name']);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars($_POST['message']);
 
     // Email details
     $to = "megijakalnina4@gmail.com"; 
     $subject = "New Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $body = "Email: $email\nMessage: $message";
     $headers = "From: $email";
 
     // Send email
