@@ -186,20 +186,7 @@
             </div>
             <div class="g-recaptcha" data-sitekey="6LcM524qAAAAACy1v0Qh2sLeKAZk923Ilzy-miXc"></div>
             <!-- test-->
-            <script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    console.log("Form submitted, checking reCAPTCHA...");
-    const response = grecaptcha.getResponse();
-    if (response.length === 0) {
-        alert("Please complete the CAPTCHA");
-        event.preventDefault(); // Prevent form submission
-    }
-    else {
-        console.log("reCAPTCHA completed. Submitting form.");
-    }
-});
-                
-</script>
+           
             <!-- test -->
             <div class="form-group">
                 <button class="btn" type="submit">Send Message</button>
@@ -207,7 +194,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         </form>
     </div>
 </section>
-
+<script src="contactForm.js"></script>
    
     <!-- Footer -->
     <footer>
