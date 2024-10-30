@@ -185,14 +185,8 @@
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
             </div>
             <div class="g-recaptcha" data-sitekey="6LcM524qAAAAACy1v0Qh2sLeKAZk923Ilzy-miXc"></div>
-            <div class="form-group">
-                <button class="btn" type="submit">Send Message</button>
-            </div>
-        </form>
-    </div>
-</section>
-
-   <script>
+            <!-- test-->
+            <script>
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     const response = grecaptcha.getResponse();
     if (response.length === 0) {
@@ -201,6 +195,15 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
 });
 </script>
+            <!-- test -->
+            <div class="form-group">
+                <button class="btn" type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+   
     <!-- Footer -->
     <footer>
         <div class="footer-content">
